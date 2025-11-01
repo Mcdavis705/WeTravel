@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Travel Recommendation</title>
-        <link rel="stylesheet" href="./travel_recommendation.css">
-        <link
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Travel Bloom</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
-    </head>
-
-    <body>
-        <nav id="navbar">
-            <h6>Travel Bloom</h1>
+    />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <h6>Travel Bloom</h6>
+        <div class="nav-right">
             <ul>
                 <li><a href="home">Home</a></li>
                 <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
-           
-            <form action="search" id="searchBar">
-                <input type="search" placeholder='Enter a destination or keyword'>
-                <button>Search</button>
-                <button>Clear</button>
+            <form id="searchBar">
+                <input type="search" placeholder='Enter a destination or keyword' id="searchInput">
+                <button id="searchBtn" type="button">Search</button>
+                <button id="clearBtn" type="button">Clear</button>
             </form>
-        </nav>
-
-        <div>
-            <h1>
-                CONTACT US
-            </h1>
-
-            <p>
-                Get in touch
-            </p>
-
-            <div>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id='name'>
-
-                    <label for="email">Email</label>
-                    <input type="text" id='email'>
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" cols="50"></textarea>
-
-
-                    <button>Submit</button>
-                </form>
-            </div>
         </div>
-    </body>
+    </nav>
 
+    <!-- PAGE CONTENT -->
+    <div id="pageContent">
+        <h1>CONTACT US</h1>
+        <p>Get in touch with us</p>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Your Email">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
 </html>
