@@ -6,8 +6,10 @@
 }
 
 body {
-    background: #f8f8f8;
-    color: #333;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* NAVBAR */
@@ -61,6 +63,7 @@ body {
 }
 
 #searchInput {
+    color:black;
     padding: 6px 12px;
     border-radius: 6px;
     border: 1px solid #bbb;
@@ -202,6 +205,115 @@ body {
 .result-item p {
     font-size: 14px;
     color: #555;
+}
+
+#pageContent {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto; 
+    padding-top: 100px;
+    min-height: calc(100vh - 120px); 
+    
+    /* Transparent overlay for readability */
+    background: rgba(0, 0, 0, 0.6); 
+    
+    border-radius: 8px;
+}
+
+#pageContent h1 {
+    font-size: 32px;
+    color: #ff5757;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#pageContent h2 {
+    font-size: 24px;
+    color: white; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#pageContent p {
+    color: #ddd; /* Light gray body text */
+}
+
+.team-members {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-members div {
+    /* Transparent background for cards */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-members div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
+.team-members h5 {
+    font-size: 18px;
+    color: #ff5757;
+    margin-bottom: 5px;
+}
+
+.team-members p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+/* CONTACT FORM */
+form label {
+    font-weight: 600;
+    color: white;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: border-color 0.3s;
+    color: white;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff5757;
+    outline: none;
+}
+
+form button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #ff5757;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e44646;
 }
 
 /* RESPONSIVE */
